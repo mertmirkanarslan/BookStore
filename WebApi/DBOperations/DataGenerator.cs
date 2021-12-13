@@ -18,7 +18,9 @@ namespace WebApi.DBOperations
                 context.Books.AddRange(
                     new Book
                     {
-                        Id = 1,
+                        //Daha önceden id kolonunu bu şekilde tanımlamıştık. Ancak bu statik ve istenmeyen, sürdürülemez bir yöntem.
+                        //Book class'ının içinde auto-increment yaptığımız için artık aşağıdaki id atamaları gereksiz. bu nedenle onları comment e alıyoruz.
+                        //Id = 1,    
                         Title = "Lean Startup",
                         GenreId = 1, //Personal Growth
                         PageCount = 200,
@@ -26,7 +28,7 @@ namespace WebApi.DBOperations
                     },
                     new Book
                     {
-                        Id = 2,
+                        //Id = 2,
                         Title = "Herland",
                         GenreId = 2, //Science Fiction
                         PageCount = 250,
@@ -34,7 +36,7 @@ namespace WebApi.DBOperations
                     },
                     new Book
                     {
-                        Id = 3,
+                        //Id = 3,
                         Title = "Dune",
                         GenreId = 1, //Science Fiction
                         PageCount = 540,
